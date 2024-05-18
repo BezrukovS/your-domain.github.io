@@ -1,100 +1,96 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <title>YOUR-DOMAIN.HOST</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Ubuntu', sans-serif;
-      height: 100vh;
-      min-height: 600px;
-      display: flex;
-      flex-direction: column;
-      color: #344A5E;
-    }
-    .central-content {
-      display: flex;
-      flex-grow: 1;
-      flex-shrink: 0;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .bottom-content {
-      height: 116px;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-    }
-    .caption {
-      margin-top: 15px;
-      text-align: center;
-    }
-    .big-text {
-      font-weight: 500;
-      font-size: 18px;
-      background-color: grey;
-      padding: 20px 60px;
-      color: white;
-    }
-    .small-text {
-      font-size: 14px;
-    }
-    .ref {
-      font-size: 14px;
-      color: #0279C0;
-      text-decoration: none;
-    }
-    .ref:hover {
-      text-decoration: underline;
-    }
-    .pic {
-      margin-bottom: 15px;
-    }
-    .b-text_lang_ru {
-      display: none;
-    }
-  </style>
+<title>Главная</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.4.2.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/Avenir_900.font.js"></script>
+<script type="text/javascript" src="js/Avenir_300.font.js"></script>
+<script type="text/javascript" src="js/Avenir_500.font.js"></script>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="http://info.template-help.com/files/ie6_warning/ie6_script_other.js"></script>
+	<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
 </head>
-<body>
-  <div class="central-content">
-    <div class="big-text caption b-text_lang_ru">Ваш сайт!</div>
-    <div class="small-text caption b-text_lang_ru">Your-domain.host</div>
-  </div>
-  <footer class="bottom-content">
-    <div><a href "your-domain.host">www.your-domain.host</a>&nbsp;© 2024</div>
-  </footer>
-
-  <script type="text/javascript">
-    var platformLanguage = navigator && (
-      navigator.language ||
-        navigator.browserLanguage ||
-        navigator.systemLanguage ||
-        navigator.userLanguage ||
-        null ),
-      elemsRU, elemsEN;
-    if (platformLanguage.match("ru") && document.getElementsByClassName) {
-      elemsRU = document.getElementsByClassName("b-text_lang_ru");
-      elemsEN = document.getElementsByClassName("b-text_lang_en");
-      var l = elemsEN.length;
-      while(l--) {
-        elemsEN[l].style.display = "none";
-      }
-      l = elemsRU.length;
-      while(l--) {
-        elemsRU[l].style.display = "block";
-      }
-      document.title = "Your-domain.host";
-    }
-  </script>
+<body id="page1">
+<div class="main">
+	<div class="body1"></div>
+<!-- header -->
+	<header>
+		<div class="wrapper">
+			<h1><a href="index.html" id="logo">Statford Systems</a></h1>
+			<nav>
+				<ul id="menu">
+					<li id="menu_active"><a href="index.html">Главная</a></li>
+					<li><a href="About.html">О нас</a></li>
+					<li><a href="Services.html">Услуги</a></li>
+					<li><a href="Projects.html">Проекты</a></li>
+					<li><a href="Contacts.html">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="banner">
+			<div class="text">
+				<h1>Surfing, Sharing, Shopping <span>Fast and Secure</span></h1>
+				<a href="#" class="button">Узнать больше</a>
+			</div>
+		</div>
+	</header>
+<!-- / header -->
+<!-- content -->
+	<section id="content">
+		<div class="box1">
+			<div class="wrapper">
+				<h2>Services</h2>
+				<ul class="list1 cols  pad_left2">
+					<li><a href="#">Интернет-канал до 500Mbps</a></li>
+					<li><a href="#">Аренда оборудования</a></li>
+					<li class="bg_none"><a href="#">VPN</a></li>
+				</ul>
+				<ul class="list1 cols  pad_left2">
+					<li><a href="#">VoIP</a></li>
+					<li><a href="#">Выделение белого IP-адреса</a></li>
+					<li class="bg_none"><a href="#">Проектирование и монтаж ЛВС</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="wrapper">
+			<article class="col1 pad_left1">
+				<h2>Recent News</h2>
+				<p><span class="color1">26.05.2023</span> <br><a href="#" class="link1"><b>Новое партнерство:</b> Мы рады объявить о партнерстве с ведущими поставщиками сетевых технологий, чтобы предложить клиентам еще более передовые и надежные решения для связи.</a></p>
+				<p><span class="color1">09.08.2023</span><br><a href="#" class="link1"><b>Расширение области обслуживания:</b> Теперь мы покрываем новые регионы, обеспечивая больше предприятий быстрым доступом к интернету для их роста и развития.</a></p>
+				<p><span class="color1">02.10.2023</span><br><a href="#" class="link1"><b>Инновационные решения безопасности:</b> Мы внедряем новейшие технологии безопасности, гарантируя защиту данных наших клиентов при использовании наших услуг подключения к интернету.</a></p>
+				<p><a href="#">Архив новостей</a></p>
+			</article>
+			<article class="col2 pad_left1">
+				<h2>Welcome to Statford Systems!</h2>
+				<p class="pad_bot2"><b>Добро пожаловать в компанию, где возможности бизнеса расширяются вместе с нами!</b></p>
+				<p class="pad_bot2">Мы - профессиональная команда, специализирующаяся на подключении предприятий к надежному и быстрому интернету. Наше миссия - обеспечить ваш бизнес стабильным и высокоскоростным интернет-подключением, удовлетворяя самые требовательные потребности. Надежность, скорость и безопасность - это то, что мы предлагаем для вашего успеха. Доверьтесь нам, и мы поможем вашему предприятию достичь новых высот в онлайн-мире.</p>
+				<div class="line1 wrapper">
+					<article class="cols">
+						<figure><img src="images/page1_img1.jpg" alt="" class="pad_bot1"></figure>
+						Мы - ведущая компания в сфере подключения предприятий к высокоскоростному интернету. Наша основная задача заключается в обеспечении надежного и быстрого интернет-подключения для предприятий всех масштабов. Мы предлагаем широкий спектр услуг, нацеленных на обеспечение высокой производительности вашего бизнеса через стабильное онлайн-присутствие. Наша компания стремится к инновационным решениям, гибким планам тарификации и высокому уровню технической поддержки, чтобы обеспечить нашим клиентам самый современный опыт в области связи и интернет-технологий.
+					</article>
+					<article class="cols right">
+						<figure><img src="images/page1_img2.jpg" alt="" class="pad_bot1"></figure>
+						Мы специализируемся на обеспечении бизнесов надежным и высокоскоростным интернет-подключением. Наша компания ориентирована на удовлетворение потребностей предприятий в быстрой и стабильной связи. Мы предлагаем клиентам современные технологии подключения, персонализированные решения и техническую поддержку на высшем уровне. Наша цель - помочь предприятиям эффективно использовать возможности онлайн-мира, обеспечивая надежные инструменты для успешного развития бизнеса в цифровой эпохе.
+					</article>
+				</div>
+			</article>
+		</div>
+	</section>
+<!-- content end-->
+<!-- footer -->
+	<footer>
+		Designed by <a href="http://www.antixaker.ru/" target="_blank" rel="nofollow">www.antixaker.ru</a><br>
+	</footer>
+<!-- footer end-->
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
 </body>
 </html>
